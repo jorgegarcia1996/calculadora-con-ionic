@@ -1,0 +1,121 @@
+<ion-content color='tertiary'>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h1>{{ display | number : '.0-8' }}</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="resetAll()" size="large" expand="full" shape="round" color="dark">
+          AC
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="resetAllLast()" size="large" expand="full" shape="round" color="dark">
+          C
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button size="large" expand="full" shape="round" color="dark">
+          %
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="setOperator('/')" size="large" expand="full" shape="round" color="dark">
+          /
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="setNumber(7)" size="large" expand="full" shape="round" color="dark">7</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="setNumber(8)" size="large" expand="full" shape="round" color="dark">
+          8
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="setNumber(9)" size="large" expand="full" shape="round" color="dark">
+          9
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="setOperator('*')" size="large" expand="full" shape="round" color="dark">
+          <ion-icon size="large" name="close"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="setNumber(4)" size="large" expand="full" shape="round" color="dark">
+          4
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="setNumber(5)" size="large" expand="full" shape="round" color="dark">
+          5
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="setNumber(6)" size="large" expand="full" shape="round" color="dark">
+          6
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="setOperator('-')" size="large" expand="full" shape="round" color="dark">
+          <ion-icon size="large" name="remove"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="setNumber(1)" size="large" expand="full" shape="round" color="dark">
+          1
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="setNumber(2)" size="large" expand="full" shape="round" color="dark">
+          2
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="setNumber(3)" size="large" expand="full" shape="round" color="dark">
+          3
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="setOperator('+')" size="large" expand="full" shape="round" color="dark">
+          <ion-icon size="large" name="add"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="invert('+/-')" size="large" expand="full" shape="round" color="dark">
+          +/-
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="setNumber(0)" size="large" expand="full" shape="round" color="dark">
+          0
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="setDecimal()" size="large" expand="full" shape="round" color="dark">
+          .
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="calculate()" size="large" expand="full" shape="round" color="dark">
+          =
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
